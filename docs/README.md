@@ -33,53 +33,57 @@ AssistenteChatGPT/
 │   ├── chatgpt_assistant.py  # Funções avançadas para gerenciamento de leads , respostas personalizadas.
 └── docs/
     └── README.md             # Documentação do projeto.
-  
+```
+
 
 ## Pré-requisitos
 
 Para executar este projeto, você precisará ter os seguintes softwares instalados:
 
+ ```bash
 - Python 3.7+
 - Biblioteca `openai`
 - Biblioteca `sqlite3`
 - Biblioteca `aiohttp`
+ ```
 
 ## Configuração
 
 1. Insira a sua chave de API do OpenAI nos arquivos app.py e chatgpt_assistant.py:
-
+ ```bash
 openai.api_key = "your-openai-api-key"
-
+ ```
 2. Certifique-se de que o caminho do banco de dados no arquivo chatgpt_assistant.py esteja correto:
-
+ ```bash
 DATABASE_PATH = 'database/assistente.db'
-
+ ```
 ## 📚 Como Executar o Projeto
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/assistente-chatgpt.git
+ ```bash
+ git clone https://github.com/seu-usuario/assistente-chatgpt.git
+ ```
 
 2. Navegue até o diretório do projeto:
-
+ ```bash
 cd assistente-chatgpt
-
+ ```
 3. Instale as dependências necessárias: Certifique-se de ter o Python instalado e execute o comando:
-
+ ```bash
 pip install -r requirements.txt
-
+ ```
 4. Crie o banco de dados: Se ainda não tiver o banco de dados assistente.db, crie-o utilizando o script fornecido em database/create_db.py. Para isso, execute o seguinte comando:
-
+ ```bash
 python database/create_db.py
-
+ ```
 5. Execute o assistente básico:
-
+ ```bash
 python src/app.py
-
+ ```
 6. Para iniciar o assistente completo com funcionalidades adicionais, execute o arquivo chatgpt_assistant.py:
-
+ ```bash
 python src/chatgpt_assistant.py
-
+ ```
 Isso permitirá a execução do assistente com integração ao banco de dados e suporte a funções como agendamento de demonstrações e captura de leads.
 
 7. Interaja com o assistente: Siga as instruções no terminal ou utilize uma interface gráfica para testar as funcionalidades do chatbot.
